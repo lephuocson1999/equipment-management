@@ -64,12 +64,12 @@ HTTP code: `2xx`:success; `4xx`:client input error; `5xx`: server err
 Viết theo thứ tự phụ thuộc: repositories -> usecases -> routers.
 
 ## CURL
-Search name và description: q=Aga 
-Pagination: page=1&limit=2
-Sort: screen DESC
-Search from, to với chi phí: from_expense=1000&to_expense=4000
-Search from, to với ngày sản xuất (timestamp): from_date_of_manufacture=1709830800&to_date_of_manufacture=1710435600
-Filter multi value với các field khác: working_radius=30m&working_radius=20m
+1. Search name và description: q=Aga 
+2. Pagination: page=1&limit=2
+3. Sort: screen DESC
+4. Search from, to với chi phí: from_expense=1000&to_expense=4000
+5. Search from, to với ngày sản xuất (timestamp): from_date_of_manufacture=1709830800&to_date_of_manufacture=1710435600
+6. Filter multi value với các field khác: working_radius=30m&working_radius=20m
 
 ```
 curl --location 'localhost:8000/api/v1/devices?page=1&limit=2&sort=screen%20DESC&q=Aga' \
