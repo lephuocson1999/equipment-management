@@ -63,3 +63,8 @@ HTTP code: `2xx`:success; `4xx`:client input error; `5xx`: server err
 ## Step coding API
 Viết theo thứ tự phụ thuộc: repositories -> usecases -> routers.
 
+## CURL
+```
+curl --location 'localhost:8000/api/v1/devices?page=1&limit=2&sort=screen%20DESC&q=Aga' \
+--header 'x-api-key: 123456789'
+```
