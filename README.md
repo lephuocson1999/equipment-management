@@ -22,7 +22,7 @@ CREATE DATABASE equipments;
 - Run Server: `./app serve`
 
 Coding convention
-1 Project structure
+1. Project structure
 ```
 cmd // Chứa main run service
     └── server.go
@@ -57,7 +57,7 @@ service // Chứa business logic tương ứng từng service
             └── device.go
 ```
 
-2 HTTP response
+2. HTTP response
 HTTP code: `2xx`:success; `4xx`:client input error; `5xx`: server err
 
 ## Step coding API
